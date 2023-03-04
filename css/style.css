@@ -1,7 +1,7 @@
 /* Estilos generales */
 
 * {
-	margin: 0;
+	margin: 0; 
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -20,18 +20,19 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 0.625rem; /* Ajusta la altura según tus necesidades */
+	height: 4.625rem; /* Ajusta la altura según tus necesidades */
 	margin-left: 40px;
 	margin-right: 40px;
+  text-transform: uppercase;
 }
 
 .header__logo {
-	font-size: 2.5rem;
+	width: 100px;
 	margin-right: 1rem;
-	color: #182848;
+	
 }
 .header__logo span {
-	color: #ff5757;
+	color: #046915;
 }
 
 .header__menu {
@@ -39,7 +40,7 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	text-transform: uppercase;
+	
 }
 
 
@@ -55,19 +56,22 @@ body {
 }
 
 .header__menu-item a:hover {
-	color: #ff5757; /* Color de los links al pasar el mouse sobre ellos */
+	color: #046915; /* Color de los links al pasar el mouse sobre ellos */
 }
 
 /* Estilos de la sección de portada */
-
 .portada {
-	background-image: linear-gradient(to right, #4b6cb7, #182848);
-	background-size: cover;
-	background-position: center;
-	height: 60vh;
-	display: flex;
-	align-items: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/plantas1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Agregamos position relative para poder utilizar z-index */
 }
+
 
 .portada__contenido {
 	color: #fff;
@@ -78,12 +82,38 @@ body {
 .portada__titulo {
 	font-size: 3rem;
 	margin-bottom: 1rem;
+  z-index: 1; 
 }
 
 .portada__texto {
-	font-size: 1.2rem;
-	line-height: 1.5;
+	font-size: 1rem;
+	line-height:2;
+  z-index: 1; 
 }
+.boton {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.boton:hover {
+  background-color: #3e8e41;
+}
+
+
 
 /* Estilos para la sección de servicios */
 .servicios {
@@ -195,11 +225,11 @@ body {
 
 /* redes */
 
-section {
+/* section {
 	background-color: #f9f9f9;
 	padding: 50px;
 	text-align: center;
-}
+} */
 
 .contacto__redes-sociales h3 {
 	font-size: 1.5em;
