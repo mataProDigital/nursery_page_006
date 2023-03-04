@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de ejemplo con BEM</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-BmAB1DQ/3ZaUDJ2/cPhH8wv2Dg6U4Ms4HP4+rW34XfMWNApSWBvj5cgIXPe5WV8U" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <nav class="header__navegacion">
+      <h3 class="header__logo">Mata<span>Pro</span></h3>
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="#">Inicio</a></li>
+        <li class="header__menu-item"><a href="#servicios">Servicios</a></li>
+        <li class="header__menu-item"><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de portada -->
+  <section class="portada">
+    <div class="portada__contenido">
+      <h1 class="portada__titulo">Bienvenidos a nuestra página web</h1>
+      <p class="portada__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis neque vel eros lacinia commodo. Sed eu eros et ex tincidunt congue. Sed id commodo mauris. Donec fermentum nulla eget diam rhoncus tristique.</p>
+    </div>
+  </section>
+<!-- Sección de servicios -->
+  <section id="servicios" class="servicios">
+  <h2 class="servicios__titulo">Nuestros servicios</h2>
+  <div class="servicios__contenedor">
+    <div class="servicios__servicio">
+      <h3 class="servicio__titulo">Servicio 1</h3>
+      <p class="servicio__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod eleifend mi, nec tincidunt sapien aliquam eget. Nam rhoncus sapien eros, quis sollicitudin lorem blandit eget.</p>
+    </div>
+    <div class="servicios__servicio">
+      <h3 class="servicio__titulo">Servicio 2</h3>
+      <p class="servicio__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod eleifend mi, nec tincidunt sapien aliquam eget. Nam rhoncus sapien eros, quis sollicitudin lorem blandit eget.</p>
+    </div>
+    <div class="servicios__servicio">
+      <h3 class="servicio__titulo">Servicio 3</h3>
+      <p class="servicio__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod eleifend mi, nec tincidunt sapien aliquam eget. Nam rhoncus sapien eros, quis sollicitudin lorem blandit eget.</p>
+    </div>
+    <div class="servicios__servicio">
+      <h3 class="servicio__titulo">Servicio 4</h3>
+      <p class="servicio__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod eleifend mi, nec tincidunt sapien aliquam eget. Nam rhoncus sapien eros, quis sollicitudin lorem blandit eget.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="contacto">
+    <h2 class="contacto__titulo">Contáctanos</h2>
+    <form class="contacto__formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- redes -->
+  <section>
+    <div class="contacto__redes-sociales">
+      <h3>Síguenos en redes sociales</h3>
+      <ul class="redes-sociales__lista">
+        <li><a href="#" class="redes-sociales__enlace"><i class="fas-fa- fa-github"></i></a></li>
+        <li><a href="#" class="redes-sociales__enlace"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="#" class="redes-sociales__enlace"><i class="fab fa-instagram-square"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="footer__contenido">
+      <p class="footer__autor">© 2023 Matapro</p>
+    </div>
+  </footer>
+</body>
+</html>
